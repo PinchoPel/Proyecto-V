@@ -82,14 +82,14 @@ gap: 30px;
 }
 
 .jugador2{
-    background-image: url(./circle-svgrepo-com.svg);
+    background-image: url(.\circle-svgrepo-com.png);
     background-size: 100px;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .jugador1{
-    background-image: url(./cross-svgrepo-com.svg);
+    background-image: url(.\cross-svgrepo-com.png);
     background-size: 100px;
   background-position: center;
   background-repeat: no-repeat;
