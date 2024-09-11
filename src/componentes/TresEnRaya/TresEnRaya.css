@@ -1,0 +1,201 @@
+.Tres{
+    color: var(--TresEnRaya-orangeLetter);
+    font-size: 40px;
+}
+
+.Tres.en.Rayaheader{
+    background-color: var(--TresEnRaya-color-one);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 14px var(--TresEnRaya-purpleLetter);
+    padding: 20px 0px;
+}
+
+.Tres.en.RayamainPart{
+background-color: var(--TresEnRaya-color-two);
+height:80vh;
+padding: 50px 0px;
+display: flex;
+justify-content: space-evenly;
+align-items: flex-start;
+gap: 30px;
+}
+
+.Tres.en.Rayafooter{
+    background-color: var(--TresEnRaya-color-two);
+    border-top: solid 3px var(--TresEnRaya-purpleLetter);
+    height: auto;
+    padding: 60px 0px;
+}
+
+.Tres.en.RayareturnMenu, .resetButtonTresEnRaya, .resetBoardTresEnRaya{
+    border-radius: 10px;
+    padding: 6px;
+    border-color:var(--TresEnRaya-purpleLetter);
+    border-width: 5px;
+    background-color: var(--TresEnRaya-color-two);
+    color: var(--TresEnRaya-purpleLetter);
+    font-weight: 900;
+    font-size: medium;
+}
+
+#gridSection{
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: var(--TresEnRaya-purpleLetter) solid 10px;
+}
+
+.sectionButton{
+    background-color: white;
+    background-image: none;
+}
+
+#buttonTresEnRaya{
+    border-color: var(--TresEnRaya-purpleLetter);
+    border-radius: 5px;
+}
+
+.divScoreTresEnRaya{
+    min-width: 15%;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: space-evenly;
+}
+
+.scoreTresEnRayaCross{
+    font-size: 20px;
+    color: var(--TresEnRaya-purpleLetter);
+    font-weight: 800;
+}
+.scoreTresEnRayaCircle{
+    font-size: 20px;
+    color: var(--TresEnRaya-orangeLetter);
+    font-weight: 800;
+}
+
+.jugador2{
+    background-image: url(./circle-svgrepo-com.svg);
+    background-size: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.jugador1{
+    background-image: url(./cross-svgrepo-com.svg);
+    background-size: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blockTile{
+    pointer-events: none;
+}
+
+@media (max-width: 750px){
+    .Tres.en.RayamainPart{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+    }
+    #gridSection{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 600px){
+    .Tres.en.RayamainPart{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #gridSection{
+        width: 350px;
+        height: 350px;
+    }
+    .jugador2{
+        background-size: 60px;
+    }
+    
+    .jugador1{
+        background-size: 60px;
+    }
+}
+
+@media (max-width: 500px){
+ 
+    #gridSection{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 426px){
+    .Tres.en.RayamainPart{
+        padding: 80px 0px;
+    }
+    #gridSection{
+        width: 260px;
+        height: 260px;
+    }
+    .Tres{
+        font-size: 30px;
+    }
+    .jugador2{
+        background-size: 50px;
+    }
+    
+    .jugador1{
+        background-size: 50px;
+    }
+    .Tres.en.RayareturnMenu, .resetButtonTresEnRaya, .resetBoardTresEnRaya{
+        font-weight: 600;
+        font-size: small;
+    }
+    .scoreTresEnRayaCross, .scoreTresEnRayaCircle{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 380px){
+
+   #gridSection{
+        width: 200px;
+        height: 200px;
+}
+.Tres{
+    padding: 25px 0px;
+}
+.jugador2{
+    background-size: 40px;
+}
+
+.jugador1{
+    background-size: 40px;
+}}
+
+@media (max-width: 260px){
+    .Tres.en.RayamainPart{
+        padding: 90px 0px;
+    }
+    #gridSection{
+        width: 170px;
+        height: 170px;
+    }
+    .Tres{
+        font-size: 20px;
+    }
+    .Tres.en.RayareturnMenu, .resetButtonTresEnRaya, .resetBoardTresEnRaya{
+        font-weight: 600;
+        font-size: small;
+    }
+}

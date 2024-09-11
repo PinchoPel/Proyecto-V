@@ -1,0 +1,227 @@
+.Ahorcado{
+    color: var(--Ahorcado-title);
+    font-size: 40px
+}
+
+.Ahorcadoheader{
+    background-color: var(--Ahorcado-header);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 14px var(--Ahorcado-title);
+    padding: 20px 0px;
+}
+
+.AhorcadomainPart{
+background-color: var(--Ahorcado-background);
+height:80vh;
+padding: 50px 0px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+.Ahorcadofooter{
+    background-color: var(--Ahorcado-background);
+    border-top: solid 3px var(--Ahorcado-title);
+    height: auto;
+    padding: 60px 0px;
+}
+
+.AhorcadoreturnMenu{
+    border-radius: 10px;
+    padding: 6px;
+    border-color:var(--Ahorcado-title);
+    border-width: 5px;
+    background-color:var(--Ahorcado-header);
+    color: var(--Ahorcado-title);
+    font-weight: 900;
+    font-size: medium;
+}
+
+#gallowsSection{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: space-evenly;
+    width: 40vw;
+    padding: 20px;
+    align-items: center;
+}
+#scoreSectionAhorcado{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 40vw;
+    padding: 20px;
+    align-items: center;
+    gap: 30px;
+}
+
+.gallowsImage{
+    width: 350px;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+#wordDiv{
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#wordGuess{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.oculto{
+    color: transparent;
+    user-select: none; 
+    border-bottom: black;
+    border-width: 2px;
+    border-style: solid;
+    margin: 0px 5px;
+    width: 15px;
+    display:flex;
+    justify-content: center;
+}
+
+.visible{
+    color: var(--Ahorcado-title);
+    border: none;
+    font-weight: 900;
+    margin: 0px 5px;
+    width: 15px;
+    display:flex;
+    justify-content: center;
+}
+
+#hint, #scoreAhorcado, .usedLetters{
+    color: var(--Ahorcado-title);
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.usedLetters{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#inputLetter, #buttonLetter, #resetButtonAhorcado, #resetScoreAhorcado{
+    border-radius: 10px;
+    padding: 6px;
+    border-color:var(--Ahorcado-borders);
+    border-width: 5px;
+    background-color: var(--Ahorcado-header);
+    color: var(--Ahorcado-title);
+    font-weight: 900;
+    font-size: medium;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+#inputLetter::placeholder{
+    color: var(--Ahorcado-title);
+}
+
+@media (max-width: 800px){
+    .AhorcadomainPart{
+        display: flex;
+        justify-content: space-between;
+    }
+    .gallowsImage{
+        width: 300px;
+    }
+    #inputLetter, #buttonLetter, #resetButtonAhorcado, #resetScoreAhorcado{
+        width: 150px;
+        font-size: small;
+    }
+    .AhorcadoreturnMenu{
+        font-weight: 900;
+        font-size: small;
+    }
+    #hint, #scoreAhorcado, .usedLetters{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 690px){
+    .gallowsImage{
+        width: 250px;
+    }
+    #hint, #scoreAhorcado, .usedLetters{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 520px){
+    .gallowsImage{
+        width: 200px;
+    }
+    #inputLetter, #buttonLetter, #resetButtonAhorcado, #resetScoreAhorcado{
+        width: 120px;
+        font-size: small;
+    }
+    #hint, #scoreAhorcado, .usedLetters{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 440px){
+    .Ahorcado{
+        font-size: 30px;
+    }
+    .AhorcadomainPart{
+        display: flex;
+        flex-direction: column;
+        height: 85vh;
+        padding: 10px;
+    }
+    #gallowsSection{
+        width:  90vw;
+        gap:30px;
+        padding: 0px 20px;
+        height: 40vh;
+    }
+    #scoreSection{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90vw;
+        gap:15px;
+        padding: 0px 20px;
+        height: 40vh;
+        justify-content: space-around
+    }
+    .gallowsImage{
+        width: 170px;
+    }
+    #inputLetter, #buttonLetter, #resetButtonAhorcado, #resetScoreAhorcado{
+        width: 120px;
+        font-size: small;
+    }
+    #hint, #scoreAhorcado, .usedLetters{
+        font-size: 16px;
+    }
+    #hint{
+        margin-bottom: 8px;
+    }
+    span{
+        font-size: 12px;
+        font-weight: 900;
+    }
+}
+@media (max-width: 321px){
+    .gallowsImage{
+        width: 140px;
+    }
+    #inputLetter, #buttonLetter, #resetButtonAhorcado, #resetScoreAhorcado{
+        width: 100px;
+        font-size: small;
+    }
+    #scoreAhorcado, #hint, .usedLetters{
+        font-size: small;
+    }
+}

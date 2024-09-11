@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+:root{
+  --landing-color-one: rgb(107, 220, 220);
+  --landing-color-two: rgb(212, 104, 212);
+  --landing-color-three: rgb(245, 248, 181);
+
+  /*Colores Tres en Raya*/
+
+  --TresEnRaya-purpleLetter: purple;
+  --TresEnRaya-color-one: rgb(244, 164, 246);
+  --TresEnRaya-orangeLetter: rgb(255, 123, 0);
+  --TresEnRaya-color-two:  rgb(237, 199, 156);
+
+  /*Colores Ahorcado*/
+
+--Ahorcado-title: rgb(154, 93, 12);
+--Ahorcado-background: rgb(117 213 117); 
+--Ahorcado-header: burlywood;
+--Ahorcado-borders: rgb(23, 6, 6);
+
+/*Colore Busca La Flota*/
+
+--Flota-tiles: rgb(99, 133, 167);
+--Flota-background: rgb(9, 40, 94);
+--Flota-backgroundSecond : rgb(153, 168, 184);
+--Flota-title: rgb(69, 69, 69);
+--Flota-letter: grey;
+}
+
+.anton-sc-regular {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+body {
+  --sb-track-color: #cef1ff;
+  --sb-thumb-color: #79cef0;
+  --sb-size: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 50px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button{
+  cursor: pointer;
+}
+

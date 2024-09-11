@@ -1,0 +1,631 @@
+.Busca.La.Flota{
+    color: var(--Flota-title);
+    font-size: 30px;
+}
+
+.Busca.La.Flotaheader{
+    background-color: var(--Flota-backgroundSecond);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 14px var(--Flota-title);
+    padding: 20px 0px;
+}
+
+.Busca.La.FlotamainPart{
+    background-color: var(--Flota-background);
+    height: 80vh;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+.Busca.La.FlotamainPart p{
+    font-size: 20px;
+    color: var(--Flota-letter);
+}
+
+.Busca.La.Flotafooter{
+    background-color: var(--Flota-backgroundSecond);
+    border-top: solid 3px var(--Flota-title);
+    height: 10vh;
+    padding: 60px 0px;
+}
+
+#boardSectionFlota{
+    width: 500px;
+    margin-left: 30px;
+}
+
+#scoreSection{
+    display: flex;
+    flex-direction: column;
+}
+
+#divSea, #divShips, #divBoard, .imageSea{
+    width: 500px;
+    position: absolute;
+    height: 500px;
+}
+
+#divShips{
+    z-index: 1;
+}
+
+#divBoard{
+    z-index: 2;
+}
+
+.Busca.La.FlotareturnMenu{
+    border-radius: 10px;
+    padding: 6px;
+    border-color: var(--Flota-title);
+    border-width: 5px;
+    background-color: var(--Flota-tiles);
+    color: var(--Flota-title);
+    font-weight: 900;
+   font-size: medium;
+   height: fit-content;
+}
+
+ .buttonsFlota{
+    border-radius: 10px;
+    padding: 6px;
+    border-color: var(--Flota-title);
+    border-width: 5px;
+    background-color: var(--Flota-backgroundSecond);
+    color: var(--Flota-title);
+    font-weight: 900;
+}
+
+#divShips{
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+}
+
+ #divBoard{
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+}
+
+.tileSpan{
+    border: black solid 1px;
+    display: flex;
+    justify-content: center;
+    max-width: 50px;
+    max-height: 50px;
+    align-items: center;
+    background-color: transparent;
+}
+
+.shipInside{
+    display: flex;
+    justify-content: center;
+    max-width: 50px;
+    max-height: 50px;
+    align-items: center;
+}
+
+#divBoard button{
+    max-width: 50px;
+    max-height: 50px;
+    background-color: var(--Flota-tiles);
+}
+
+.enemy, .neutral, .ally{
+    width: 50px;
+    background-color: transparent;
+}
+
+.enemies, .neutrals, .allies{
+    width: 50px;
+    background-color: transparent;
+}
+
+#score{
+    font-size: large;
+}
+
+#divAttempts{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#divAttemptsButtons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+#divAttempts button{
+    height: fit-content;
+}
+
+#divAttempts p{
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width :950px){
+    .Busca.La.FlotamainPart{
+        height: auto;
+    }
+    #boardSectionFlota{
+        width: 400px;
+        height:400px;
+        margin-left: 30px;
+    }
+    #divSea, #divShips, #divBoard, .imageSea{
+        width: 400px;
+        position: absolute;
+        height: 400px;
+    }
+    .buttonsFlota{
+        border-radius: 10px;
+        padding: 6px;
+        border-color: var(--Flota-title);
+        border-width: 5px;
+        background-color: var(--Flota-backgroundSecond);
+        color: var(--Flota-title);
+        font-weight: 900;
+        height: fit-content;
+        width: fit-content;
+    }
+    
+    #divShips{
+        display: grid;
+        grid-template-columns: repeat(10, 40px);
+        grid-template-rows: repeat(10, 40px);
+    }
+    
+     #divBoard{
+        display: grid;
+        grid-template-columns: repeat(10, 40px);
+        grid-template-rows: repeat(10, 40px);
+    }
+    .tileSpan{
+        border: black solid 1px;
+        display: flex;
+        justify-content: center;
+        max-width: 40px;
+        max-height: 40px;
+        align-items: center;
+        background-color: transparent;
+    }
+    .shipInside{
+        display: flex;
+        justify-content: center;
+        max-width: 40px;
+        max-height: 40px;
+        align-items: center;
+    }
+    
+    #divBoard button{
+        max-width: 40px;
+        max-height: 40px;
+        background-color: var(--Flota-tiles);
+    }
+    
+    .enemy, .neutral, .ally{
+        width: 40px;
+        background-color: transparent;
+    }
+    
+    .enemies, .neutrals, .allies{
+        width: 40px;
+        background-color: transparent;
+    }
+    #divAttempts p{
+        font-size: medium;
+    }
+}
+
+
+@media (max-width :741px){
+
+    
+    #boardSectionFlota{
+        margin: 10px 30px;
+    }
+
+    .Busca.La.FlotamainPart{
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 700px;
+        padding: 20px 0px;
+    }
+    #scoreSection{
+      
+        flex-direction: row;
+        width: 95vw;
+        flex-wrap: wrap;
+        padding: 0;
+        height: fit-content;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #divAttempts{
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        border: 3px var(--Flota-backgroundSecond) dotted;
+        padding: 10px 10px;
+    }
+    #divAttempts p{
+        text-align: center;
+        margin-right: 10px;
+    }
+    .buttonsFlota{
+        font-size: small;
+    }
+}
+
+
+@media (max-width :520px){
+    .Busca.La.FlotamainPart{
+        height: 750px;
+    }
+}
+
+
+@media (max-width :460px){
+    .Busca.La.FlotamainPart{
+        height: 700px;
+    }
+    #boardSectionFlota{
+        width: 350px;
+        height: auto;
+        margin: 0px 20px;
+    }
+    #divSea, #divShips, #divBoard, .imageSea{
+        width: 350px;
+        position: absolute;
+        height: 350px;
+    }
+    .buttonsFlota{
+        border-radius: 10px;
+        padding: 6px;
+        border-color: var(--Flota-title);
+        border-width: 5px;
+        background-color: var(--Flota-backgroundSecond);
+        color: var(--Flota-title);
+        font-weight: 700;
+        height: fit-content;
+        width: fit-content;
+    }
+    
+    #divShips{
+        display: grid;
+        grid-template-columns: repeat(10, 35px);
+        grid-template-rows: repeat(10, 35px);
+    }
+    
+     #divBoard{
+        display: grid;
+        grid-template-columns: repeat(10, 35px);
+        grid-template-rows: repeat(10, 35px);
+    }
+    .tileSpan{
+        border: black solid 1px;
+        display: flex;
+        justify-content: center;
+        max-width: 35px;
+        max-height: 35px;
+        align-items: center;
+        background-color: transparent;
+    }
+    .shipInside{
+        display: flex;
+        justify-content: center;
+        max-width: 35px;
+        max-height: 35px;
+        align-items: center;
+    }
+    
+    #divBoard button{
+        max-width: 35px;
+        max-height: 35px;
+        background-color: var(--Flota-tiles);
+    }
+    
+    .enemy, .neutral, .ally{
+        width: 35px;
+        background-color: transparent;
+    }
+    
+    .enemies, .neutrals, .allies{
+        width: 35px;
+        background-color: transparent;
+    }
+    #divAttempts p{
+        font-size: medium;
+    }
+}
+
+
+@media (max-width :400px){
+    .Busca.La.Flota{
+        font-size: 20px;
+    }
+    .Busca.La.FlotamainPart{
+        height: 600px;
+    }
+    #boardSectionFlota{
+        width: 300px;
+        height: auto;
+        margin: 0px 20px;
+    }
+    #divSea, #divShips, #divBoard, .imageSea{
+        width: 300px;
+        position: absolute;
+        height: 300px;
+    }
+    .buttonsFlota{
+        border-radius: 10px;
+        padding: 4px;
+        border-color: var(--Flota-title);
+        border-width: 3px;
+        background-color: var(--Flota-backgroundSecond);
+        color: var(--Flota-title);
+        font-weight: 700;
+        height: fit-content;
+        width: fit-content;
+        font-size: small;
+    }
+    
+    #divShips{
+        display: grid;
+        grid-template-columns: repeat(10, 30px);
+        grid-template-rows: repeat(10, 30px);
+    }
+    
+     #divBoard{
+        display: grid;
+        grid-template-columns: repeat(10, 30px);
+        grid-template-rows: repeat(10, 30px);
+    }
+    .tileSpan{
+        border: black solid 1px;
+        display: flex;
+        justify-content: center;
+        max-width: 30px;
+        max-height: 30px;
+        align-items: center;
+        background-color: transparent;
+    }
+    .shipInside{
+        display: flex;
+        justify-content: center;
+        max-width: 30px;
+        max-height: 30px;
+        align-items: center;
+    }
+    
+    #divBoard button{
+        max-width: 30px;
+        max-height: 30px;
+        background-color: var(--Flota-tiles);
+    }
+    
+    .enemy, .neutral, .ally{
+        width: 30px;
+        background-color: transparent;
+    }
+    
+    .enemies, .neutrals, .allies{
+        width: 30px;
+        background-color: transparent;
+    }
+    #divAttempts{
+        margin: 20px 10px;
+    }
+    #scoreSection{
+        display: flex;
+        justify-content: space-around;
+    }
+    #score{
+        font-size: small;
+    }
+    #divAttempts p{
+        font-size: small;
+       
+    }
+    .Busca.La.FlotareturnMenu{
+        border-radius: 10px;
+        padding: 4px;
+        border-color: var(--Flota-title);
+        border-width: 3px;
+        background-color: var(--Flota-tiles);
+        color: var(--Flota-title);
+        font-weight: 700;
+       font-size: small;
+    }
+}
+
+@media (max-width :350px){
+
+    .Busca.La.FlotamainPart{
+        height: 560px;
+    } 
+    #boardSectionFlota{
+        width: 250px;
+        height: auto;
+        margin: 0px 20px;
+    }
+    #divSea, #divShips, #divBoard, .imageSea{
+        width: 250px;
+        position: absolute;
+        height: 250px;
+    }
+    .buttonsFlota{
+        border-radius: 10px;
+        padding: 4px;
+        border-color: var(--Flota-title);
+        border-width: 3px;
+        background-color: var(--Flota-backgroundSecond);
+        color: var(--Flota-title);
+        font-weight: 700;
+        height: fit-content;
+        width: fit-content;
+        font-size: small;
+    }
+    
+    #divShips{
+        display: grid;
+        grid-template-columns: repeat(10, 25px);
+        grid-template-rows: repeat(10, 25px);
+    }
+    
+     #divBoard{
+        display: grid;
+        grid-template-columns: repeat(10, 25px);
+        grid-template-rows: repeat(10, 25px);
+    }
+    .tileSpan{
+        border: black solid 1px;
+        display: flex;
+        justify-content: center;
+        max-width: 25px;
+        max-height: 25px;
+        align-items: center;
+        background-color: transparent;
+    }
+    .shipInside{
+        display: flex;
+        justify-content: center;
+        max-width: 25px;
+        max-height: 25px;
+        align-items: center;
+    }
+    
+    #divBoard button{
+        max-width: 25px;
+        max-height: 25px;
+        background-color: var(--Flota-tiles);
+    }
+    
+    .enemy, .neutral, .ally{
+        width: 25px;
+        background-color: transparent;
+    }
+    
+    .enemies, .neutrals, .allies{
+        width: 25px;
+        background-color: transparent;
+    }
+
+    .Busca.La.FlotareturnMenu{
+        border-radius: 10px;
+        padding: 4px;
+        border-color: var(--Flota-title);
+        border-width: 3px;
+        background-color: var(--Flota-tiles);
+        color: var(--Flota-title);
+        font-weight: 700;
+       font-size: small;
+    }
+}
+
+@media (max-width :290px){
+    .Busca.La.FlotamainPart{
+        height: 560px;
+    } 
+    #boardSectionFlota{
+        width: 220px;
+        height: auto;
+        margin: 0px 20px;
+    }
+    #divSea, #divShips, #divBoard, .imageSea{
+        width: 220px;
+        position: absolute;
+        height: 220px;
+    }
+    .buttonsFlota{
+        border-radius: 10px;
+        padding: 4px;
+        border-color: var(--Flota-title);
+        border-width: 3px;
+        background-color: var(--Flota-backgroundSecond);
+        color: var(--Flota-title);
+        font-weight: 700;
+        height: fit-content;
+        width: fit-content;
+        font-size: small;
+    }
+    
+    #divShips{
+        display: grid;
+        grid-template-columns: repeat(10, 22px);
+        grid-template-rows: repeat(10, 22px);
+    }
+    
+     #divBoard{
+        display: grid;
+        grid-template-columns: repeat(10, 22px);
+        grid-template-rows: repeat(10, 22px);
+    }
+    .tileSpan{
+        border: black solid 1px;
+        display: flex;
+        justify-content: center;
+        max-width: 22px;
+        max-height: 22px;
+        align-items: center;
+        background-color: transparent;
+    }
+    .shipInside{
+        display: flex;
+        justify-content: center;
+        max-width: 22px;
+        max-height: 22px;
+        align-items: center;
+    }
+    
+    #divBoard button{
+        max-width: 22px;
+        max-height: 22px;
+        background-color: var(--Flota-tiles);
+    }
+    
+    .enemy, .neutral, .ally{
+        width: 22px;
+        background-color: transparent;
+    }
+    
+    .enemies, .neutrals, .allies{
+        width: 22px;
+        background-color: transparent;
+    }
+
+    .Busca.La.FlotareturnMenu{
+        border-radius: 10px;
+        padding: 2px;
+        border-color: var(--Flota-title);
+        border-width: 2px;
+        background-color: var(--Flota-tiles);
+        color: var(--Flota-title);
+        font-weight: 700;
+       font-size: x-small;
+    }
+    .buttonsFlota{
+        font-size: x-small;
+    }
+    #score{
+        font-size: x-small;
+    }
+    #divAttempts p{
+        font-size: x-small; 
+    }
+}

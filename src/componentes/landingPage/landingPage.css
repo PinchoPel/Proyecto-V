@@ -1,0 +1,57 @@
+h1{
+    text-align: center;
+    color: var(--landing-color-one);
+    -webkit-text-stroke: 3px var(--landing-color-two);
+    font-size: 80px;
+    font-style: italic;
+    border-bottom: 5px solid var(--landing-color-one);
+    }
+
+.headerLandingPage{
+    height: 20vh;
+    padding: 5vh 20vw;
+    background-color: var(--landing-color-three);
+}
+
+.mainPartLandingPage{
+    background-color: var(--landing-color-three);
+    height: 70vh;
+}
+
+.footerLandingPage{
+    width: 0px;
+    height: 0px;
+    padding: 0;
+}
+    
+    @media (max-width: 850px){
+        h1{
+            font-size: 60px;
+        }
+    }
+    
+    @media (max-width: 650px){
+        h1{
+            font-size: 50px;
+        }
+    }
+    
+    @media (max-width: 550px){
+        h1{
+            font-size: 40px;
+            -webkit-text-stroke: 2.5px var(--landing-color-two);
+        }
+    }
+    
+    @media (max-width: 420px){
+        h1{
+            font-size: 30px;
+            -webkit-text-stroke: 2px var(--landing-color-two);
+        }
+    }
+    
+    @media (max-width: 320px){
+        h1{
+            font-size: 25px;
+        }
+    }
