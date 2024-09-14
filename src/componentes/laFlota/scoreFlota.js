@@ -28,7 +28,7 @@ else{
     let hardButton = document.createElement("button");
     let newGame = document.createElement("button");
 
-    scoreSection.id = "scoreSection";
+    scoreSection.id = "scoreSectionFlota";
     [resetScoreButton, easyButton, mediumButton, hardButton, newGame].forEach(button => button.classList.add("buttonsFlota"));
     score.textContent = "Puntuación: " + pointsFlota;
     score.id = "score";

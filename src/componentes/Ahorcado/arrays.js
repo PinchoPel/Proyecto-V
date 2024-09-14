@@ -17,44 +17,43 @@ export const arrays = {
     "horno", "microondas", "cafetera", "batidora", "olla",
     "sartén", "colador", "rallador", "abrelatas", "cortador",
     "tostadora", "nevera", "lavadora", "secadora", "ventana",
-    "puerta", "alfombra", "cortina", "reloj despertador", "taburete",
-    "fregadero", "grifos", "papel higiénico", "cubo de basura", "linterna",
-    "paraguas", "cepillo de dientes", "pasta de dientes", "cortauñas", "crema"
+    "puerta", "alfombra", "cortina", "taburete",
+    "fregadero", "grifos", "linterna",
+    "paraguas", "cortauñas", "crema"
   ],
   
 Comida : [
     "pizza", "hamburguesa", "sushi", "tacos", "espaguetis",
     "ensalada", "burrito", "sopa", "lasaña", "paella",
-    "raviolis", "pollo asado", "ceviche", "guisantes", "empanadas",
-    "falafel", "gnocchi", "quesadilla", "bocadillo", "ensaladilla rusa",
+    "raviolis", "pollo", "ceviche", "guisantes", "empanadas",
+    "falafel", "gnocchi", "quesadilla", "bocadillo", "ensaladilla",
     "kebab", "huevo frito", "tortilla", "filete", "gazpacho",
-    "patatas fritas", "canelones", "tarta", "creppes", "tequeños", "guisantes"
+    "patatas", "canelones", "tarta", "creppes", "tequeños", "guisantes"
   ],
   
 CiudadDelMundo : [
     "Nueva York", "Londres", "Tokio", "París", "Sídney",
-    "Bagdag", "Roma", "Berlín", "Toronto", "Los Ángeles",
-    "Buenos Aires", "Ciudad de México", "Sao Paulo", "Moscú", "Pekín",
+    "Bagdag", "Roma", "Berlín", "Toronto", "Moscú", "Pekín",
     "Seúl", "Bangkok", "Dubái", "Johannesburgo", "Estambul",
-    "Hong Kong", "Singapur", "Damasco", "Chicago", "San Francisco",
+    "Hong Kong", "Singapur", "Damasco", "Chicago", 
     "Lima", "Bogotá", "Johannesburgo", "Viena", "Ámsterdam",
     "Dublín", "Lisboa", "Praga", "Copenhague", "Atenas",
     "Estocolmo", "Bruselas", "Varsovia", "Helsinki", "Oslo",
     "Budapest", "Zúrich", "Ginebra", "Vancouver", "Montreal",
-    "Melbourne", "Caracas", "Nueva Delhi", "Atenas", "Rabat"
+    "Melbourne", "Caracas",  "Atenas", "Rabat"
   ],
 
  CapitalDeProvincia : [
     "Almería", "Cádiz", "Córdoba", "Granada", "Huelva",
     "Jaén", "Málaga", "Sevilla", "Huesca", "Teruel",
-    "Zaragoza", "Oviedo", "Palma", "Las Palmas de Gran Canaria", "Santa Cruz de Tenerife",
+    "Zaragoza", "Oviedo", "Palma", 
     "Santander", "Ávila", "Burgos", "León", "Palencia",
     "Salamanca", "Segovia", "Soria", "Valladolid", "Zamora",
-    "Albacete", "Ciudad Real", "Cuenca", "Guadalajara", "Toledo",
+    "Albacete",  "Cuenca", "Guadalajara", "Toledo",
     "Barcelona", "Girona", "Lleida", "Tarragona", "Alicante",
-    "Castellón", "Valencia", "Badajoz", "Cáceres", "A Coruña",
+    "Castellón", "Valencia", "Badajoz", "Cáceres", "Coruña",
     "Lugo", "Ourense", "Pontevedra", "Madrid", "Murcia",
-    "Pamplona", "Logroño", "Vitoria-Gasteiz", "San Sebastián", "Bilbao"
+    "Pamplona", "Logroño", "Vitoria",  "Bilbao"
   ],
   
  Animal : [
@@ -66,10 +65,10 @@ CiudadDelMundo : [
     "rinoceronte", "cebra", "canguro", "koala", "panda",
     "oso", "lobo", "zorro", "mono", "chimpancé",
     "gorila", "orangután", "delfín", "ballena", "tiburón",
-    "pingüino", "foca", "león marino", "pelícano", "flamenco",
+    "pingüino", "foca", "león", "pelícano", "flamenco",
     "águila", "halcón", "búho", "cuervo", "paloma",
     "gorrión", "golondrina", "pato", "cisne", "grulla",
-    "cigüeña", "caballito de mar", "medusa", "salmón", "cangrejo",
+    "cigüeña", "medusa", "salmón", "cangrejo",
     "langosta", "buitre", "pulpo", "calamar", "mosca",
     "mosquito", "hormiga", "abeja", "avispa", "mariposa",
     "saltamontes", "grillo", "escarabajo", "caracol", "lombriz",
@@ -80,24 +79,23 @@ CiudadDelMundo : [
   ],
   
   País : [
-    "Afganistán", "Albania", "Alemania", "Andorra", "Angola", "Antigua y Barbuda", "Arabia Saudita", "Argelia", "Argentina", "Armenia",
+    "Afganistán", "Albania", "Alemania", "Andorra", "Angola", "Argelia", "Argentina", "Armenia",
     "Australia", "Austria", "Azerbaiyán", "Bangladés", "Barbados", "Baréin", "Bélgica", "Belice", "Benín",
-    "Bielorrusia", "Birmania", "Bolivia", "Bosnia y Herzegovina", "Botsuana", "Brasil", "Brunéi", "Bulgaria", "Burkina Faso", "Burundi",
-    "Bután", "Cabo Verde", "Camboya", "Camerún", "Canadá", "Catar", "Chad", "Chile", "China", "Chipre",
-    "Colombia", "Comoras", "Corea del Norte", "Corea del Sur", "Costa de Marfil", "Costa Rica", "Croacia", "Cuba", "Dinamarca", "Dominica",
-    "Ecuador", "Egipto", "El Salvador", "Emiratos Árabes Unidos", "Eritrea", "Eslovaquia", "Eslovenia", "España", "Estados Unidos", "Estonia",
+    "Bielorrusia", "Birmania", "Bolivia", "Bosnia", "Botsuana", "Brasil", "Brunéi", "Bulgaria", "Burundi",
+    "Bután",  "Camboya", "Camerún", "Canadá", "Catar", "Chad", "Chile", "China", "Chipre",
+    "Colombia", "Comoras", "Croacia", "Cuba", "Dinamarca", "Dominica",
+    "Ecuador", "Egipto",  "Eritrea", "Eslovaquia", "Eslovenia", "España", "Estonia",
     "Etiopía", "Filipinas", "Finlandia", "Fiyi", "Francia", "Gabón", "Gambia", "Georgia", "Ghana", "Grecia",
-    "Guatemala", "Guinea",  "Guinea Ecuatorial", "Guyana", "Haití", "Honduras", "Hungría", "India", "Indonesia",
-    "Irak", "Irán", "Irlanda", "Islandia", "Islas Marshall", "Islas Salomón", "Israel", "Italia", "Jamaica", "Japón",
+    "Guatemala", "Guinea","Guyana", "Haití", "Honduras", "Hungría", "India", "Indonesia",
+    "Irak", "Irán", "Irlanda", "Islandia",  "Israel", "Italia", "Jamaica", "Japón",
     "Jordania", "Kazajistán", "Kenia", "Kirguistán", "Kiribati", "Kosovo", "Kuwait", "Laos", "Lesoto", "Letonia",
     "Líbano", "Liberia", "Libia", "Liechtenstein", "Lituania", "Luxemburgo", "Madagascar", "Malasia", "Malaui", "Maldivas",
     "Malí", "Malta", "Marruecos", "Mauricio", "Mauritania", "México", "Micronesia", "Moldavia", "Mónaco", "Mongolia",
-    "Montenegro", "Mozambique", "Namibia", "Nauru", "Nepal", "Nicaragua", "Níger", "Nigeria", "Noruega", "Nueva Zelanda",
-    "Omán", "Países Bajos", "Pakistán", "Palaos", "Panamá", "Papúa Nueva Guinea", "Paraguay", "Perú", "Polonia", "Portugal",
-    "Reino Unido", "República Centroafricana", "República Checa", "República Democrática del Congo", "República Dominicana", "Ruanda", "Rumania", "Rusia", "Samoa", "San Cristóbal y Nieves",
-    "San Marino", "San Vicente y las Granadinas", "Santa Lucía", "Santo Tomé y Príncipe", "Senegal", "Serbia", "Sierra Leona", "Singapur", "Siria",
-    "Somalia", "Sri Lanka", "Suazilandia", "Sudáfrica", "Sudán", "Sudán del Sur", "Suecia", "Suiza", "Surinam", "Tailandia",
-    "Tanzania", "Tayikistán", "Timor Oriental", "Togo", "Tonga", "Trinidad y Tobago", "Túnez", "Turkmenistán", "Turquía", "Tuvalu",
+    "Montenegro", "Mozambique", "Namibia", "Nauru", "Nepal", "Nicaragua", "Níger", "Nigeria", "Noruega", 
+    "Omán",  "Pakistán", "Palaos", "Panamá",  "Paraguay", "Perú", "Polonia", "Portugal",
+    "Inglaterra","Ruanda", "Rumania", "Rusia", "Samoa",  "Senegal", "Serbia", "Singapur", "Siria",
+    "Somalia",  "Suazilandia", "Sudáfrica", "Sudán",  "Suecia", "Suiza", "Surinam", "Tailandia",
+    "Tanzania", "Tayikistán",  "Togo", "Tonga",  "Túnez", "Turkmenistán", "Turquía", "Tuvalu",
     "Ucrania", "Uganda", "Uruguay", "Uzbekistán", "Vanuatu", "Vaticano", "Venezuela", "Vietnam", "Yemen", "Yibuti",
     "Zambia", "Zimbabue"
 ]}
