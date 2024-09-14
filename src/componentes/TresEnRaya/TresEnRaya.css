@@ -96,7 +96,7 @@ gap: 30px;
 }
 
 #crossimg, #circleimg{
-    width: 120px;
+    width: 115px;
     border: none;
     background-color: white;
 }
@@ -105,7 +105,7 @@ gap: 30px;
     pointer-events: none;
 }
 
-@media (max-width: 750px){
+@media (max-width: 780px){
     .Tres.en.RayamainPart{
         flex-direction: column;
         align-items: center;
@@ -115,6 +115,11 @@ gap: 30px;
     #gridSection{
         width: 400px;
         height: 400px;
+    }
+    #crossimg, #circleimg{
+        width: 100px;
+        border: none;
+        background-color: white;
     }
 }
 
@@ -127,14 +132,12 @@ gap: 30px;
     #gridSection{
         width: 350px;
         height: 350px;
-    }
-    .jugador2{
-        background-size: 60px;
-    }
-    
-    .jugador1{
-        background-size: 60px;
-    }
+    }   
+      #crossimg, #circleimg{
+          width: 90px;
+          border: none;
+          background-color: white;
+      }
 }
 
 @media (max-width: 500px){
@@ -142,6 +145,11 @@ gap: 30px;
     #gridSection{
         width: 300px;
         height: 300px;
+    }
+    #crossimg, #circleimg{
+        width: 75px;
+        border: none;
+        background-color: white;
     }
 }
 
@@ -156,12 +164,10 @@ gap: 30px;
     .Tres{
         font-size: 30px;
     }
-    .jugador2{
-        background-size: 50px;
-    }
-    
-    .jugador1{
-        background-size: 50px;
+    #crossimg, #circleimg{
+        width: 60px;
+        border: none;
+        background-color: white;
     }
     .Tres.en.RayareturnMenu, .resetButtonTresEnRaya, .resetBoardTresEnRaya{
         font-weight: 600;
@@ -181,13 +187,12 @@ gap: 30px;
 .Tres{
     padding: 25px 0px;
 }
-.jugador2{
-    background-size: 40px;
+#crossimg, #circleimg{
+    width: 50px;
+    border: none;
+    background-color: white;
 }
-
-.jugador1{
-    background-size: 40px;
-}}
+}
 
 @media (max-width: 260px){
     .Tres.en.RayamainPart{
@@ -203,5 +208,10 @@ gap: 30px;
     .Tres.en.RayareturnMenu, .resetButtonTresEnRaya, .resetBoardTresEnRaya{
         font-weight: 600;
         font-size: small;
+    }
+    #crossimg, #circleimg{
+        width: 40px;
+        border: none;
+        background-color: white;
     }
 }
