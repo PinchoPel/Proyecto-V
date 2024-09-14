@@ -52,9 +52,16 @@ gap: 30px;
     border: var(--TresEnRaya-purpleLetter) solid 10px;
 }
 
+#gridSection button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
 .sectionButton{
     background-color: white;
-    background-image: none;
+  
 }
 
 #buttonTresEnRaya{
@@ -81,18 +88,17 @@ gap: 30px;
     font-weight: 800;
 }
 
-.jugador2{
-    background-image: url(./circle-svgrepo-com.png);
-    background-size: 100px;
+.jugador2 .jugador1 {
   background-position: center;
   background-repeat: no-repeat;
+  border: none;
+  background-color: white;
 }
 
-.jugador1{
-    background-image: url(./cross-svgrepo-com.png);
-    background-size: 100px;
-  background-position: center;
-  background-repeat: no-repeat;
+#crossimg, #circleimg{
+    width: 120px;
+    border: none;
+    background-color: white;
 }
 
 .blockTile{

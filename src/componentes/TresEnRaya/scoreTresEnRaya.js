@@ -43,7 +43,8 @@ sumPointsTresEnRaya = { sumCross: 0, sumCircle: 0}
   resetBoardTresEnRaya.addEventListener("click",() => {
     boardTresEnRaya.classList.remove("blockTile");
     for (const eachTile of allTiles) {
-     ( eachTile.classList.remove("jugador1", "jugador2","blockTile"));
+      eachTile.innerHTML = "";
+     (eachTile.classList.remove("jugador1", "jugador2","blockTile"));
        eachTile.classList.add("sectionButton");
    };
   })
